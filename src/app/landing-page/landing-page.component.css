@@ -1,0 +1,31 @@
+body{
+margin: 0;
+padding: 0;
+background-color: #fef9f8;
+height: 1000px;
+color: #0d0d0d;
+}
+img{
+    width: 500px;
+    height: 400px;
+    margin-top: 30%;
+    margin-left: 20%;
+
+}
+p{
+    font-size: xx-large;
+    margin-top: 40%;
+}
+.row{
+   text-align: center;
+   margin-left: 5%;
+}
+#btn{
+    width: 10%;
+    height: 10%;
+    margin-left: 20%;
+
+}
+
+
+
