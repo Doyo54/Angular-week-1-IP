@@ -1,9 +1,10 @@
 body{
 margin: 0;
 padding: 0;
-background-color: #fef9f8;
 height: 1000px;
-color: #0d0d0d;
+background-image: url(../../assets/image5.jpg);
+color:white;
+
 }
 img{
     width: 500px;
@@ -12,20 +13,60 @@ img{
     margin-left: 20%;
 
 }
-p{
-    font-size: xx-large;
-    margin-top: 40%;
+#quote{
+    font-size: 40px;
+    margin-top: 30%;
+    margin-left:10%;
+    width: 100%;
+    font-weight: bold;
+    color: black;
 }
 .row{
    text-align: center;
    margin-left: 5%;
 }
 #btn{
-    width: 10%;
-    height: 10%;
-    margin-left: 20%;
+ width: 20%;
+ height:16%;
+ display: inline-block;
+ background-color: #7b38d8;
+ border-radius: 10px;
+ border: 4px double #cccccc;
+ color: #eeeeee;
+ text-align: center;
+ font-size: 28px;
+ padding: 20px;
+ width: 200px;
+ position: relative;
+margin-top: 50%;
+margin-left: 3%;
+
 
 }
+.topnav {
+   position: fixed;
+    overflow: hidden;
+    width: 100%;
+
+    right: 0%;
+  }
+
+  .topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    
+  }
+  #Home{
+      margin-right: 80%;
+  }
+  
+  .topnav a:hover {
+    background-color:#7b38d8;
+    color: black;
+  }
+
 
 
 
