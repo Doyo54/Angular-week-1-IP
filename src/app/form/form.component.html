@@ -1,23 +1,37 @@
+<div class="col-md-6">
 <form id="qForm">
     <h1 class="">Add a Quote</h1>
-
+<hr>
      <div class="field">
      <label for="title">Your name:</label>
      <input name="name" id="name" #newName> 
      </div>
+     <hr>
      <div class="field">
      <label for="link">Author's Name:</label>
      <input name="author" id="author" #newAuthor>
      </div>
+     <hr>
      <div class="field">
         <label for="link">Quote:</label>
         <input name="quote" id="quote" #newQuote>
         </div>
-
+<hr>
         <div class="field">
             <label for="link">Completion date:</label>
             <input type="date" id="date" #newDate>
 
       </div>
+      <hr>
       <button id="btn1"(click)="onPost(newName, newAuthor, newQuote, newDate)"> Post Quote</button>
 </form>
+</div>
+
+<div class="summary" *ngFor='let quote of quotes let i=index'>
+        
+      <h1>  {{quote.message}}</h1>
+      Author name: {{quote.Author}}
+      <br>
+      Publisher: {{quote.name}}
+</div>
+<app-summary></app-summary>
