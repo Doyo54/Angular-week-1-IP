@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FormComponent } from './form/form.component';
 import { SummaryComponent } from './summary/summary.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     FormComponent,
-    SummaryComponent
+    SummaryComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
