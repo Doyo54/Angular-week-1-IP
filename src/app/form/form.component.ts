@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Output, EventEmitter} from '@angular/core';
 import { Quote } from '../../app/quote';
 
 @Component({
@@ -7,13 +7,22 @@ import { Quote } from '../../app/quote';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  quotes:Quote[] = [
-    { name:'Doyo', Author:'Watch finding Nemo', message:'yo'},
-    {name:'Doyo', Author:'Watch finding Nemo', message:'hi'},
-  ]
-  onPost(name: HTMLInputElement, author: HTMLInputElement, quote: HTMLInputElement, date: HTMLInputElement): boolean {
-     console.log(`Adding article title: ${name.value} and link: ${author.value}`);
-     return false;
+  @Output() emitQuote= new EventEmitter()
+  newQuote:string
+  newName:string
+  newAuthor:string
+  newDate:number
+  theWords:any
+
+  onPost(){
+    this.theWords = new Quote(this.newName,this.newAuthor,this.newQuote, this.newDate)
+    this.newQuote=''
+    this.newAuthor=''
+    this.newName=''
+    this.emitQuote.emit(this.theWords)
+    console.log('hi')
+    return false;
+
   }
   constructor() { }
 

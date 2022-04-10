@@ -1,5 +1,8 @@
 export class Quote {
-    name: string;
-    Author: string;
-    message: string;
+    constructor(public name:string, public Author:string,public message:string, public date:any){
+        this.name=name;
+        this.Author=Author;
+        this.message=message;
+
+    }
 }
