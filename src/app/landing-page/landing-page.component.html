@@ -15,11 +15,11 @@
 </div>
 <app-form (emitQuote)="addQuote($event)"></app-form>
     </div>
-    <ul>
-      <li *ngFor="let quote of quotes">
+    
+      <div *ngFor="let quote of quotes">
     <app-summary [quote]="quote"></app-summary>I 
-      </li>
-    </ul>
+      </div>
+  
 </div>
 
 </body>

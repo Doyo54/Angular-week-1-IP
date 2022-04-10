@@ -11,7 +11,7 @@ export class FormComponent implements OnInit {
   newQuote:string
   newName:string
   newAuthor:string
-  newDate:number
+  newDate:any
   theWords:any
 
   onPost(){
@@ -19,6 +19,7 @@ export class FormComponent implements OnInit {
     this.newQuote=''
     this.newAuthor=''
     this.newName=''
+    this.newDate=''
     this.emitQuote.emit(this.theWords)
     console.log('hi')
     return false;

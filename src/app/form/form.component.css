@@ -1,18 +1,10 @@
 #btn1{
-    width: 30%;
+    width: 17%;
     height: 20%;
 }
+
 #qForm{
-    margin-top: 30%;
+    margin-top: 10%;
     font-size: x-large;
     text-align: center;
-}
-.summary{
-    position: relative;
-    bottom: 40%;
-    left: 30%;
-    color: black;
-    font-weight: bold;
-
-
 }

@@ -2,7 +2,7 @@ body{
 margin: 0;
 padding: 0;
 /* background-image: url(../../assets/image5.jpg); */
-height: 2000px;
+height: fit-content;
 overflow: hidden;
 background-attachment: fixed;
 color:black;
