@@ -7,6 +7,8 @@ import{Quote} from '../quote';
 })
 export class SummaryComponent implements OnInit {
 @Input() quote:Quote
+votesUp=0;
+votesDown=0
   constructor() { }
 
   ngOnInit(): void {

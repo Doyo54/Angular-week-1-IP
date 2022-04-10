@@ -10,11 +10,15 @@ export class LandingPageComponent implements OnInit {
     new Quote ('Dave','Nelson Mandela','The greatest glory in living lies not in never falling, but in rising every time we fall. ', new Date),
      new Quote ('Sarah','Benjamin Franklin', 'Tell me and I forget. Teach me and I remember. Involve me and I learn', new Date),
   ]
+  voteUp(i) {
+    this.quotes[i].votesUp +=1;
+  }
+  voteDown(i) {
+    this.quotes[i].votesDown +=1;
+  }
   addQuote(theQuote) {
     this.quotes.push(theQuote)
   }
-
-
   constructor() { }
 
   ngOnInit(): void {

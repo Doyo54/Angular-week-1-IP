@@ -1,8 +1,9 @@
 export class Quote {
+    public votesUp:number
+    public votesDown:number
     constructor(public name:string, public Author:string,public message:string, public date:any){
-        this.name=name;
-        this.Author=Author;
-        this.message=message;
+        this.votesUp =0;
+        this.votesDown =0;
 
     }
 }
