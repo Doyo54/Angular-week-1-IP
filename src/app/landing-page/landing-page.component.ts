@@ -16,6 +16,9 @@ export class LandingPageComponent implements OnInit {
   voteDown(i) {
     this.quotes[i].votesDown +=1;
   }
+  delQuote(i) {
+    this.quotes.splice(i, 1)
+  }
   addQuote(theQuote) {
     this.quotes.push(theQuote)
   }

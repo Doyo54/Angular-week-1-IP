@@ -1,18 +1,18 @@
 body{
 margin: 0;
 padding: 0;
-/* background-image: url(../../assets/image5.jpg); */
+background-image: url(../../assets/image5.jpg);
 height: fit-content;
 overflow: hidden;
 background-attachment: fixed;
-color:black;
+color:white;
 
 }
 #quote{
     font-size: 40px;
     width: 100%;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 .row{
    text-align: center;
@@ -44,7 +44,7 @@ color:black;
   }
 
   .topnav a {
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
