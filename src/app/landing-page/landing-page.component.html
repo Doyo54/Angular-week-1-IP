@@ -1,12 +1,12 @@
 <body>
 <div class="container">
     <div class="row">
+      <!-- Navigation bar -->
         <div class="topnav">
-            
-            <a id="Home" href="">Home</a>
-            <a id=""href="">Add Quote</a>
-        
+            <a href="" id="Home">Home</a>
+            <a href="">Add Quote</a>
           </div>
+          <!-- Navigation bar ends -->
           <div class="col-md-6">
         <p id="quote">Quoting means to repeat the exact words of a speaker or an author. A quote is also a passage or statement repeated in this way. It means to cite something as a form of proof.</p>
           </div>
@@ -18,8 +18,8 @@
     
       <div *ngFor="let quote of quotes let i=index">
     <app-summary [quote]="quote"></app-summary>
-    <button class="btn btn-info" (click)="voteUp(i)">Upvote </button>
-    <button class="btn btn-info" (click)="voteDown(i)">Downvote </button>
+    <button class="btn1" (click)="voteUp(i)">Upvote </button>
+    <button class="btn2" (click)="voteDown(i)">Downvote </button>
     <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
       </div>
   

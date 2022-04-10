@@ -1,22 +1,22 @@
 <form (ngSubmit)="onPost()" id="qForm">
-    <h1 class="">Add a Quote</h1>
+    <h1>Add Quote</h1>   
 <hr>
-     <div class="field">
+ <div class="myForm">
      <label for="title">Your name:</label>
      <input type="text" name="name" id="name" [(ngModel)]="newName"> 
      </div>
      <hr>
-     <div class="field">
+ <div class="myForm">
      <label for="link">Author's Names:</label>
      <input type="text" id="author" name="Author" [(ngModel)]="newAuthor">
      </div>
      <hr>
-     <div class="field">
+ <div class="myForm">
         <label for="link">Quote:</label>
         <input type="text" name="quote" id="quote" [(ngModel)]="newQuote">
         </div>
 <hr>
-        <div class="field">
+ <div class="myForm">
             <label for="link">Completion date:</label>
             <input type="date" id="date" name="date" [(ngModel)]="newDate">
 

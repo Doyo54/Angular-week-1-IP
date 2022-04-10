@@ -11,10 +11,10 @@ export class LandingPageComponent implements OnInit {
      new Quote ('Sarah','Benjamin Franklin', 'Tell me and I forget. Teach me and I remember. Involve me and I learn', new Date),
   ]
   voteUp(i) {
-    this.quotes[i].votesUp +=1;
+    this.quotes[i].votesUp ++;
   }
   voteDown(i) {
-    this.quotes[i].votesDown +=1;
+    this.quotes[i].votesDown ++;
   }
   delQuote(i) {
     this.quotes.splice(i, 1)
