@@ -1,4 +1,6 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
+
 <div class="container">
     <div class="row">
           <div class="col-md-6">
@@ -12,11 +14,12 @@
     
       <div *ngFor="let quote of quotes let i=index">
     <app-summary [quote]="quote"></app-summary>
-    <button class="btn1" (click)="voteUp(i)">Upvote </button>
-    <button class="btn2" (click)="voteDown(i)">Downvote </button>
-    <button class="btn btn-danger" (click)="delQuote(i)">Delete</button>
+<div class="buttons">
+    <button id="up" (click)="voteUp(i)">Upvote  <i class="fa fa-thumbs-up"></i> </button>
+    <button id="down" id="down" (click)="voteDown(i)">Downvote <i class="fa fa-thumbs-down"></i></button>
+    <button id="del" (click)="delQuote(i)">Delete <i class="fa fa-trash"></i></button>
       </div>
-  
+      </div>
 </div>
 
 </body>

@@ -61,6 +61,22 @@ color:white;
     color: black;
   }
 
+  .buttons{
+    margin-left: 6%;
+    width: 25%;
+    font-size: x-large;
+  }
+#up,#down{
+border-radius: 15%;
+}
+  #del{
+margin-left: 20%;
+background-color:brown;
+overflow: hidden;
+border-radius: 20%;
+font-weight: bold;
+  }
+
 
 
 
