@@ -1,7 +1,7 @@
 body{
    margin: 0;
    padding: 0;
-   background-image: url(../../assets/image6.jpg);
+   background-image: url(../../assets/image4.jpg);
    height: fit-content;
    width: auto;
    overflow: hidden;
@@ -12,9 +12,10 @@ body{
 #quote{
    font-size: 35px;
    width: 100%;
-   font-weight: bold;
+   font-weight:bolder;
    color: white;
    margin-top: 20%;
+
 }
 
 .row{

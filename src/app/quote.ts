@@ -5,5 +5,6 @@ export class Quote {
     constructor(public name:string, public Author:string,public quote:string, public date:Date){
         this.votesUp =0;
         this.votesDown =0;
+    
     }
 }
