@@ -3,23 +3,34 @@
 <hr>
  <div class="myForm">
      <label for="title">Your name:</label>
-     <input type="text" name="name" id="name" [(ngModel)]="newName"> 
+     <input type="text" name="name" id="name" [(ngModel)]="newName" #name='ngModel' required> 
+     <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+            <p>Name is required</p>
+     </div>
      </div>
      <hr>
  <div class="myForm">
      <label for="link">Author's Names:</label>
-     <input type="text" id="author" name="Author" [(ngModel)]="newAuthor">
+     <input type="text" id="author" name="Author" [(ngModel)]="newAuthor" #author='ngModel' required>
+     <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+        <p>Name is required</p>
+ </div>
      </div>
      <hr>
  <div class="myForm">
         <label for="link">Quote:</label>
-        <input type="text" name="quote" id="quote" [(ngModel)]="newQuote">
+        <input type="text" name="quote" id="quote" [(ngModel)]="newQuote" #quote='ngModel' required>
+        <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+            <p>Name is required</p>
+     </div>
         </div>
 <hr>
  <div class="myForm">
             <label for="link">Completion date:</label>
-            <input type="date" id="date" name="date" [(ngModel)]="newDate">
-
+            <input type="date" id="date" name="date" [(ngModel)]="newDate" #date='ngModel' required>
+            <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
+                <p>Name is required</p>
+         </div>
       </div>
       <hr>
       <button type="submit" id="btn1"> Post Quote</button>
