@@ -10,7 +10,7 @@
       Publisher:{{quote.name}}
     </p>
     <p>
-       Date {{quote.date|dateCount}}
+       Date {{quote.date|date}}
       </p>
       <p>
         Upvotes:{{quote.votesUp}}
@@ -18,6 +18,8 @@
       <p>
         Downvotes:{{quote.votesDown}}
       </p>
-
+<p>
+  Quote Posted {{quote.date|dateCount}} days ago
+</p>
 </div>
 
