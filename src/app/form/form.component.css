@@ -1,14 +1,14 @@
 #btn1{
     height: 70px;
  display: inline-block;
- background-color:navy;
+ background-color:#000080;
  border-radius: 10px;
  border: 4px double #cccccc;
  color: white;
- text-align: center;
  font-size: 28px;
  width: 280px;
  padding: 0;
+ margin-left: 40%;
  
 }
 #qForm{
@@ -17,6 +17,19 @@
 }
 
 h1{
-    font-size: 70px;
+    font-size: 60px;
     margin-left: 5%;
+}
+.form{
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: .5rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    text-align: center;
+}
+.myForm{
+    width: 100%;
 }

@@ -8,7 +8,7 @@ import { Quote } from '../quote';
 export class LandingPageComponent implements OnInit {
   quotes = [
     // new Quote ('Dave','Nelson Mandela','The greatest glory in living lies not in never falling, but in rising every time we fall. ', new Date),
-     new Quote ('Sarah','Benjamin Franklin', 'Tell me and I forget. Teach me and I remember. Involve me and I learn', new Date(2020,4,1)),
+     new Quote ('Sarah','Benjamin Franklin', 'Tell me and I forget. Teach me and I remember. Involve me and I learn', new Date(2020,2,1)),
   ]
   voteUp(i) {
     this.quotes[i].votesUp ++;
@@ -16,9 +16,14 @@ export class LandingPageComponent implements OnInit {
   voteDown(i) {
     this.quotes[i].votesDown ++;
   }
-  delQuote(i) {
-    this.quotes.splice(i, 1)
+  delQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete this Quote?`)
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
   }
+}
   addQuote(theQuote) {
     this.quotes.push(theQuote)
   }

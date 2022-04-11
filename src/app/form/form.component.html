@@ -1,6 +1,6 @@
 <form #myForm="ngForm" (ngSubmit)="onPost(); myForm.resetForm()" id="qForm">
     <h1>Add Quote</h1>   
-<hr>
+<div class="form">
  <div class="myForm">
      <label for="title">Your name:</label>
      <input type="text" name="name" id="name" [(ngModel)]="newName" #name='ngModel' required> 
@@ -34,6 +34,7 @@
       </div>
       <hr>
       <button type="submit" id="btn1"> Post Quote</button>
+</div>
 </form>
 
 

@@ -1,11 +1,11 @@
 .summary{
     font-size:x-large;
-    width: 440px;
+    width: 450px;
     height: fit-content;
-    border: 15px solid #7b38d8;
+    border: 10px solid navy;
    padding: 50px;
    margin-top: 10%;
-
+font-weight: bold;
 }
 
 .quote{
