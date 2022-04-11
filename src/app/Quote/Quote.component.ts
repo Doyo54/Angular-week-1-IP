@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
 @Component({
-  selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.css']
+  selector: 'app-Quote',
+  templateUrl: './Quote.component.html',
+  styleUrls: ['./Quote.component.css']
 })
 export class LandingPageComponent implements OnInit {
   quotes = [

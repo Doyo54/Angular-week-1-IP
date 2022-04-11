@@ -1,4 +1,4 @@
-<form (ngSubmit)="onPost()" id="qForm">
+<form #myForm="ngForm" (ngSubmit)="onPost(); myForm.resetForm()" id="qForm">
     <h1>Add Quote</h1>   
 <hr>
  <div class="myForm">
@@ -13,7 +13,7 @@
      <label for="link">Author's Names:</label>
      <input type="text" id="author" name="Author" [(ngModel)]="newAuthor" #author='ngModel' required>
      <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
-        <p>Name is required</p>
+        <p>Author is required</p>
  </div>
      </div>
      <hr>
@@ -21,7 +21,7 @@
         <label for="link">Quote:</label>
         <input type="text" name="quote" id="quote" [(ngModel)]="newQuote" #quote='ngModel' required>
         <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
-            <p>Name is required</p>
+            <p>Quote is required</p>
      </div>
         </div>
 <hr>
@@ -29,7 +29,7 @@
             <label for="link">Completion date:</label>
             <input type="date" id="date" name="date" [(ngModel)]="newDate" #date='ngModel' required>
             <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
-                <p>Name is required</p>
+                <p>Date is required</p>
          </div>
       </div>
       <hr>
