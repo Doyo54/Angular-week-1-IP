@@ -14,7 +14,7 @@
      <input type="text" id="author" name="Author" [(ngModel)]="newAuthor" #author='ngModel' required>
      <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
         <p>Author is required</p>
- </div>
+     </div>
      </div>
      <hr>
  <div class="myForm">
@@ -22,16 +22,16 @@
         <input type="text" name="quote" id="quote" [(ngModel)]="newQuote" #quote='ngModel' required>
         <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
             <p>Quote is required</p>
-     </div>
+        </div>
         </div>
 <hr>
  <div class="myForm">
-            <label for="link">Completion date:</label>
-            <input type="date" id="date" name="date" [(ngModel)]="newDate" #date='ngModel' required>
-            <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
-                <p>Date is required</p>
-         </div>
-      </div>
+       <label for="link">Completion date:</label>
+       <input type="date" id="date" name="date" [(ngModel)]="newDate" #date='ngModel' required>
+        <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
+             <p>Date is required</p>
+        </div>
+        </div>
       <hr>
       <button type="submit" id="btn1"> Post Quote</button>
 </div>

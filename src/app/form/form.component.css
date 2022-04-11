@@ -1,16 +1,16 @@
 #btn1{
-    height: 70px;
- display: inline-block;
- background-color:#000080;
- border-radius: 10px;
- border: 4px double #cccccc;
- color: white;
- font-size: 28px;
- width: 280px;
- padding: 0;
- margin-left: 40%;
- 
+   height: 70px;
+   display: inline-block;
+   background-color:#000080;
+   border-radius: 10px;
+   border: 4px double #cccccc;
+   color: white;
+   font-size: 28px;
+   width: 280px;
+   padding: 0;
+   margin-left: 40%;
 }
+
 #qForm{
     margin-top: 10%;
     font-size: xx-large;
@@ -20,6 +20,7 @@ h1{
     font-size: 60px;
     margin-left: 5%;
 }
+
 .form{
     background-color: transparent;
     border: 1px solid;
@@ -30,6 +31,7 @@ h1{
     gap: .25rem;
     text-align: center;
 }
+
 .myForm{
     width: 100%;
 }

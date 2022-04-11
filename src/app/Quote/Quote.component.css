@@ -1,20 +1,20 @@
 body{
-margin: 0;
-padding: 0;
-background-image: url(../../assets/image6.jpg);
-height: fit-content;
-width: auto;
-overflow: hidden;
-background-attachment: fixed;
-color:white;
+   margin: 0;
+   padding: 0;
+   background-image: url(../../assets/image6.jpg);
+   height: fit-content;
+   width: auto;
+   overflow: hidden;
+   background-attachment: fixed;
+   color:white;
 }
 
 #quote{
-    font-size: 35px;
-    width: 100%;
-    font-weight: bold;
-    color: white;
-    margin-top: 20%;
+   font-size: 35px;
+   width: 100%;
+   font-weight: bold;
+   color: white;
+   margin-top: 20%;
 }
 
 .row{
@@ -22,45 +22,44 @@ color:white;
 }
 
 #btn{
- height: 70px;
- display: inline-block;
- background-color: navy;
- border-radius: 10px;
- border: 4px double #cccccc;
- color: #eeeeee;
- text-align: center;
- font-size: 28px;
- width: 280px;
- padding: 0;
- margin-top: 10%;
- position: relative;
- top: 40%;
- 
+   height: 70px;
+   display: inline-block;
+   background-color: navy;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  width: 280px;
+  padding: 0;
+  margin-top: 10%;
+  position: relative;
+  top: 40%;
 }
-  #Home{
-      margin-right: 80%;
-  }
 
+#Home{
+   margin-right: 80%;
+}
 
-  .buttons{
-    margin-left: 12%;
-    width: 50%;
-    font-size: x-large;
-    margin-top: 6%;
-  }
+.buttons{
+   margin-left: 12%;
+   width: 50%;
+   font-size: x-large;
+   margin-top: 6%;
+}
 #up,#down{
-border-radius: 15%;
-background-color: navy;
-color: white;
+   border-radius: 15%;
+   background-color: navy;
+   color: white;
 }
-  #del{
-margin-left: 1%;
-background-color:brown;
-overflow: hidden;
-border-radius: 20%;
-font-weight: bold;
-color: white;
-  }
+#del{
+   margin-left: 1%;
+   background-color:brown;
+   overflow: hidden;
+   border-radius: 20%;
+   font-weight: bold;
+   color: white;
+}
 
 
 

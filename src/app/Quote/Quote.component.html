@@ -1,32 +1,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
-
 <div class="container">
     <div class="row">
           <div class="col-md-6">
         <p id="quote">This is an application where users can create quotes and have those quotes voted on whether they are terrible or are inspirational.<br> Quoting means to repeat the exact words of a speaker or an author. A quote is also a passage or statement repeated in this way. It means to cite something as a form of proof.</p>
           </div>
-<div class="col-md-6">
+ <div class="col-md-6">
 <button id="btn" onclick="document.location='https://blog.hubspot.com/sales/famous-quotes'" >Look for Quotes </button>
-</div>
-<div class="col-md-12">
+ </div>
+ <div class="col-md-12">
   <!-- Component Selector -->
 <app-form (emitQuote)="addQuote($event)"></app-form>
 <!--  -->
 </div>
     
-    
-      <div class="col-md-6" *ngFor="let quote of quotes let i=index">
+<div class="col-md-6" *ngFor="let quote of quotes let i=index">
         <!-- Component Selector -->
-    <app-summary [quote]="quote"></app-summary>
-    <!--  -->
+   <app-summary [quote]="quote"></app-summary>
     <!-- buttons -->
-<div class="buttons">
+  <div class="buttons">
     <button id="up" (click)="voteUp(i)">Upvote  <i class="fa fa-thumbs-up"></i> </button>
     <button id="down" id="down" (click)="voteDown(i)">Downvote <i class="fa fa-thumbs-down"></i></button>
     <button id="del" (click)="delQuote($event,i)">Delete <i class="fa fa-trash"></i></button>
-      </div>
-</div>
-</div>
+    </div>
+   </div>
+ </div>
 </div>
 </body>
