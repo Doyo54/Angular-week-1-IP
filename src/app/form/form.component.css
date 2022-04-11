@@ -1,13 +1,23 @@
 #btn1{
-    width: 17%;
-    height: 20%;
+    height: 70px;
+ display: inline-block;
+ background-color:navy;
+ border-radius: 10px;
+ border: 4px double #cccccc;
+ color: white;
+ text-align: center;
+ font-size: 28px;
+ width: 280px;
+ padding: 0;
+ 
 }
 
 #qForm{
     margin-top: 10%;
-    font-size: x-large;
-    text-align: center;
+    font-size: xx-large;
 }
+
 h1{
     font-size: 70px;
+    margin-left: 5%;
 }

@@ -9,17 +9,19 @@
 <div class="col-md-6">
 <button id="btn" onclick="document.location='https://blog.hubspot.com/sales/famous-quotes'" >Look for Quotes </button>
 </div>
+<div class="col-md-12">
 <app-form (emitQuote)="addQuote($event)"></app-form>
-    </div>
+</div>
     
-      <div *ngFor="let quote of quotes let i=index">
+    
+      <div class="col-md-6" *ngFor="let quote of quotes let i=index">
     <app-summary [quote]="quote"></app-summary>
 <div class="buttons">
     <button id="up" (click)="voteUp(i)">Upvote  <i class="fa fa-thumbs-up"></i> </button>
     <button id="down" id="down" (click)="voteDown(i)">Downvote <i class="fa fa-thumbs-down"></i></button>
     <button id="del" (click)="delQuote(i)">Delete <i class="fa fa-trash"></i></button>
       </div>
-      </div>
 </div>
-
+</div>
+</div>
 </body>

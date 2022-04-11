@@ -3,6 +3,7 @@ margin: 0;
 padding: 0;
 background-image: url(../../assets/image6.jpg);
 height: fit-content;
+width: auto;
 overflow: hidden;
 background-attachment: fixed;
 color:white;
@@ -13,15 +14,13 @@ color:white;
     width: 100%;
     font-weight: bold;
     color: white;
+    margin-top: 20%;
 }
 
 .row{
    text-align: center;
 }
 
-.col-md-6{
-  margin-top: 15%;
-}
 #btn{
  height: 70px;
  display: inline-block;
@@ -31,46 +30,29 @@ color:white;
  color: #eeeeee;
  text-align: center;
  font-size: 28px;
- padding: 20px;
  width: 280px;
  padding: 0;
- margin-top: 20%;
+ margin-top: 40%;
  
 }
-.topnav {
-   position: fixed;
-    overflow: hidden;
-    width: 100%;
-
-    right: 0%;
-  }
-
-  .topnav a {
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-    
-  }
   #Home{
       margin-right: 80%;
   }
-  
-  .topnav a:hover {
-    background-color:#7b38d8;
-    color: black;
-  }
+
 
   .buttons{
-    margin-left: 6%;
-    width: 25%;
+    margin-left: 12%;
+    width: 50%;
     font-size: x-large;
+    margin-top: 6%;
   }
 #up,#down{
 border-radius: 15%;
+background-color: black;
+color: white;
 }
   #del{
-margin-left: 20%;
+margin-left: 1%;
 background-color:brown;
 overflow: hidden;
 border-radius: 20%;
