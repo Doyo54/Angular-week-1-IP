@@ -1,7 +1,8 @@
 <div class="summary">
 <h1> Quote</h1>
-  <p class="quote" appHighlight>
-  {{quote.quote}}
+<!-- Form Output using interpolation -->
+ <p appHighlight>
+    {{quote.quote}}
   </p>
     <p>
       Author:{{quote.Author}}
@@ -13,10 +14,10 @@
        Date {{quote.date|date}}
       </p>
       <p>
-        Upvotes:{{quote.votesUp}}
+        Upvotes: <span class="up">{{quote.votesUp}}</span>
       </p>
       <p>
-        Downvotes:{{quote.votesDown}}
+        Downvotes: <span class="down">{{quote.votesDown}}</span>
       </p>
 <p>
   Quote Posted {{quote.date|dateCount}} days ago

@@ -10,21 +10,25 @@ export class FormComponent implements OnInit {
   newQuote:string
   newName:string
   newAuthor:string
-  newDate:any
+  newDate:Date
   theWords:any
   
-  @Output() emitQuote= new EventEmitter()
-  onPost(){
-    this.theWords = new Quote(this.newName,this.newAuthor,this.newQuote, this.newDate)
-    this.newQuote=''
-    this.newAuthor=''
-    this.newName=''
-    this.newDate=''
-    this.emitQuote.emit(this.theWords)
-    console.log('hi')
-    return false;
+@Output() emitQuote= new EventEmitter()
 
+// function to add form input on to the page //
+  onPost(){
+    if(!this.newName || !this.newAuthor || !this.newQuote || !this.newDate) {
+      alert('Please fill in all boxes')
+    }else{
+      this.theWords = new Quote(this.newName,this.newAuthor,this.newQuote, this.newDate)
+      this.newQuote=''
+      this.newAuthor=''
+      this.newName=''
+      let display = this.emitQuote.emit(this.theWords)
+      console.log('hi')
+    return display;
   }
+}
   constructor() { }
 
   ngOnInit(): void {

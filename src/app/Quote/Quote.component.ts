@@ -9,12 +9,15 @@ export class LandingPageComponent implements OnInit {
   quotes = [
      new Quote ('Sarah','Benjamin Franklin', 'Tell me and I forget. Teach me and I remember. Involve me and I learn', new Date(2020,2,1)),
   ]
+
   voteUp(i) {
     this.quotes[i].votesUp ++;
   }
+
   voteDown(i) {
     this.quotes[i].votesDown ++;
   }
+
   delQuote(isComplete, index) {
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete this Quote?`)
@@ -23,9 +26,11 @@ export class LandingPageComponent implements OnInit {
       }
   }
 }
-  addQuote(theQuote) {
+
+  onAddPost(theQuote) {
     this.quotes.push(theQuote)
   }
+
   constructor() { }
 
   ngOnInit(): void {

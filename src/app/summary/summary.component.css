@@ -9,7 +9,11 @@
 }
 
 .quote{
-   font-size: 100%;
+   font-size: 110%;
    margin: 2%;
    font-weight: bold;
+}
+.up,.down{
+   color: white;
+   font-size: xx-large;
 }
