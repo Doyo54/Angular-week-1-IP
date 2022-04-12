@@ -18,13 +18,14 @@
    <app-summary [quote]="quote"></app-summary>
     <!-- buttons -->
   <div class="buttons">
-    <button id="up" (click)="voteUp(i)">Upvote  <i class="fa fa-thumbs-up"></i> </button>
-    <button id="down" id="down" (click)="voteDown(i)">Downvote <i class="fa fa-thumbs-down"></i></button>
-    <button id="del" (click)="delQuote($event,i)">Delete <i class="fa fa-trash"></i></button>
+    <button id="up" (click)="voteUp(i)"><i class="fa fa-thumbs-up"></i> </button>
+    <button id="down" id="down" (click)="voteDown(i)"><i class="fa fa-thumbs-down"></i></button>
+    <button id="del" (click)="delQuote($event,i)"><i class="fa fa-trash"></i></button>
     </div>
    </div>
  </div>
 </div>
+<footer> © 2022 Quotes. Terms and conditions.</footer>
 <div class="icons">
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>

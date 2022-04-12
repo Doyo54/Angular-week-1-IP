@@ -3,7 +3,7 @@ body{
    padding: 0;
    background-image: url(../../assets/image4.jpg);
    height: fit-content;
-   width: auto;
+   width:auto;
    overflow: hidden;
    background-attachment: fixed;
    color:white;
@@ -28,17 +28,17 @@ body{
    height: 70px;
    display: inline-block;
    background-color: transparent;
-  border-radius: 10px;
-  border: 4px double #cccccc;
-  color: #eeeeee;
-  font-weight: bold;
-  text-align: center;
-  font-size: 28px;
-  width: 280px;
-  padding: 0;
-  margin-top: 12%;
-  position: relative;
-  top: 40%;
+   border-radius: 10px;
+   border: 4px double #cccccc;
+   color: #eeeeee;
+   font-weight: bold;
+   text-align: center;
+   font-size: 28px;
+   width: 280px;
+   padding: 0;
+   margin-top: 12%;
+   position: relative;
+   top: 40%;
 }
 
 #Home{
@@ -46,18 +46,18 @@ body{
 }
 
 .buttons{
-   margin-left: 12%;
-   width: 50%;
-   font-size: x-large;
-   margin-top: 6%;
+   position: relative;
+   right: 16%;
+   font-size: xx-large;
+   margin-top: 3%;
 }
 #up,#down{
-   border-radius: 15%;
    background-color: navy;
    color: white;
+   margin-left: 10%;
 }
 #del{
-   margin-left: 1%;
+   margin-left: 10%;
    background-color:brown;
    overflow: hidden;
    border-radius: 20%;
@@ -65,43 +65,47 @@ body{
    color: white;
 }
 .icons {
-   font-size: 20px;
+   font-size: 25px;
    width: 200px;
    text-align: center;
    text-decoration: none;
    margin-top: 10px;
+
  }
  
  .fa:hover {
      opacity: 0.7;
  }
  .fa-facebook {
-   background: #3B5998;
+   background: transparent;
    color: white;
    margin-right: 10%;
  }
  
  .fa-twitter {
-   background: #55ACEE;
+   background: transparent;
    color: white;
    margin-right: 10%;
  }
  .fa-youtube {
-   background: #bb0000;
+   background: transparent;
    color: white;
    margin-right: 10%;
  }
  
  .fa-instagram {
-   background: #125688;
+   background: transparent;
    color: white;
    margin-right: 10%;
  }
  
  .fa-pinterest {
-   background: #cb2027;
+   background: transparent;
    color: white;
-
+ }
+ footer{
+    float: right;
+    margin-top: 1%;
  }
 
 
